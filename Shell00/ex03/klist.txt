@@ -1,0 +1,5 @@
+Credentials cache: API:46CF4EDD-A9E8-4B60-B1C4-AD4408140F0C
+        Principal: gfezzuog@42ROMA.IT
+
+  Issued                Expires               Principal
+Oct  1 10:44:52 2021  Oct  1 20:44:46 2021  krbtgt/42ROMA.IT@42ROMA.IT
