@@ -6,7 +6,7 @@
 /*   By: gfezzuog <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/04 14:25:39 by gfezzuog          #+#    #+#             */
-/*   Updated: 2021/10/07 16:26:58 by gfezzuog         ###   ########.fr       */
+/*   Updated: 2021/10/11 17:20:18 by gfezzuog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,29 @@ void	ft_print_control(char a, char b, char c)
 	}
 }
 
+void	controll(char a, char b, char c)
+{
+	while (a <= '7' && b <= '8' && c <= '9')
+	{
+		ft_print_control(a, b, c);
+		if (c < '9')
+		{
+			c++;
+		}
+		else if (b == '8' && c == '9' )
+		{
+			a++;
+			b = a + 1;
+			c = b + 1;
+		}
+		else if (c == '9')
+		{
+			b++;
+			c = b + 1;
+		}	
+	}
+}
+
 void	ft_print_comb(void)
 {
 	char	a;
@@ -36,20 +59,5 @@ void	ft_print_comb(void)
 	a = '0';
 	b = '1';
 	c = '2';
-	while (a <= '7' && b <= '8' && c <= '9')
-	{
-		ft_print_control(a, b, c);
-		if (b == '8' && c == '9')
-		{
-			a++;
-			b = a + 1;
-		}
-		else if (c == '9')
-		{
-			b++;
-			c = b + 1;
-		}
-		else
-			c++;
-	}	
+	controll(a, b, c);
 }

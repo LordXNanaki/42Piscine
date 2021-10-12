@@ -1,25 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_referse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gfezzuog <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/04 12:11:57 by gfezzuog          #+#    #+#             */
-/*   Updated: 2021/10/07 16:10:01 by gfezzuog         ###   ########.fr       */
+/*   Created: 2021/10/07 20:49:51 by gfezzuog          #+#    #+#             */
+/*   Updated: 2021/10/07 20:55:19 by gfezzuog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	<unistd.h>
 
-void	ft_print_reverse_alphabet(void)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
-	char	letter;
+	int	ris;
+	int	res;
 
-	letter = 'z';
-	while (letter >= 'a')
-	{
-		write (1, &letter, 1);
-		letter--;
-	}
+	ris = *a / *b;
+	res = *a % *b;
 }
