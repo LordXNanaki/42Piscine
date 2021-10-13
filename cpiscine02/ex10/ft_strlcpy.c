@@ -9,7 +9,6 @@
 /*   Updated: 2021/10/12 16:15:52 by gfezzuog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
 int ft_strlen(int c, char *vec)
 {
@@ -47,15 +46,4 @@ unsigned int ft_strlcpy(char *dest, char *src, unsigned  int size)
 	}
 	ft_strlen(e, src);
 	return(e);
-}
-
-int	main()
-{
-	char dest[] = "ciao";
-	char src;
-	unsigned int size;
-	ft_strlcpy(dest, src, size);
-	write(1, &e, 1);
-
-	return 0;
 }

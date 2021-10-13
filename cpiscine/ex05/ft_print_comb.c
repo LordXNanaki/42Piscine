@@ -17,47 +17,32 @@ void	ft_print_control(char a, char b, char c)
 	write (1, &a, 1);
 	write (1, &b, 1);
 	write (1, &c, 1);
-	if (a == '7' && b == '8' && c == '9')
+	if (a != '7' || b != '8' || c != '9')
 	{		
-		write (1, "", 1);
-	}
-	else
-	{
 		write (1, ", ", 2);
-	}
-}
-
-void	controll(char a, char b, char c)
-{
-	while (a <= '7' && b <= '8' && c <= '9')
-	{
-		ft_print_control(a, b, c);
-		if (c < '9')
-		{
-			c++;
-		}
-		else if (b == '8' && c == '9' )
-		{
-			a++;
-			b = a + 1;
-			c = b + 1;
-		}
-		else if (c == '9')
-		{
-			b++;
-			c = b + 1;
-		}	
-	}
+	}	
 }
 
 void	ft_print_comb(void)
 {
-	char	a;
-	char	b;
-	char	c;
+	char d;
+	char e;
+	char f;
 
-	a = '0';
-	b = '1';
-	c = '2';
-	controll(a, b, c);
+	d = '0';
+	while (d <= '7')
+	{
+		e = d + 1;
+		while (e <= '8')
+		{
+			f = e + 1;
+			while (f <= '9')
+			{
+				ft_print_control(d, e, f);
+				f++;
+			}
+			e++;
+		}
+		d++;
+	}
 }
