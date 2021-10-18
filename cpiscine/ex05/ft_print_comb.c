@@ -6,7 +6,7 @@
 /*   By: gfezzuog <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/04 14:25:39 by gfezzuog          #+#    #+#             */
-/*   Updated: 2021/10/11 17:20:18 by gfezzuog         ###   ########.fr       */
+/*   Updated: 2021/10/16 17:19:13 by gfezzuog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ void	ft_print_control(char a, char b, char c)
 
 void	ft_print_comb(void)
 {
-	char d;
-	char e;
-	char f;
+	char	d;
+	char	e;
+	char	f;
 
 	d = '0';
 	while (d <= '7')

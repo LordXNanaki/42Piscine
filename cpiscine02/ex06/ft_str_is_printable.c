@@ -6,7 +6,7 @@
 /*   By: gfezzuog <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 12:17:35 by gfezzuog          #+#    #+#             */
-/*   Updated: 2021/10/11 15:19:34 by gfezzuog         ###   ########.fr       */
+/*   Updated: 2021/10/18 20:27:15 by gfezzuog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@ int	ft_str_is_printable(char *str)
 	int	i;
 	int	n;
 
+	n = 1;
 	i = 0;
 	while (str[i] != '\0')
 	{

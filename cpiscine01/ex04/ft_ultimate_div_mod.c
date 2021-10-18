@@ -6,7 +6,7 @@
 /*   By: gfezzuog <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/07 20:49:51 by gfezzuog          #+#    #+#             */
-/*   Updated: 2021/10/07 20:55:19 by gfezzuog         ###   ########.fr       */
+/*   Updated: 2021/10/16 16:59:08 by gfezzuog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,6 @@ void	ft_ultimate_div_mod(int *a, int *b)
 
 	ris = *a / *b;
 	res = *a % *b;
+	*a = ris;
+	*b = res;
 }

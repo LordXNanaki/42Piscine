@@ -6,7 +6,7 @@
 /*   By: gfezzuog <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/07 16:52:32 by gfezzuog          #+#    #+#             */
-/*   Updated: 2021/10/07 17:13:04 by gfezzuog         ###   ########.fr       */
+/*   Updated: 2021/10/14 17:20:32 by gfezzuog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -14,10 +14,4 @@
 void	ft_ft(int *nbr)
 {
 	*nbr = 42;
-}
-int	main()
-{
-	int nbr;
-	ft_ft(&nbr);
-	write(1, &nbr, 1);
 }

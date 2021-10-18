@@ -6,11 +6,11 @@
 /*   By: gfezzuog <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 12:28:56 by gfezzuog          #+#    #+#             */
-/*   Updated: 2021/10/11 14:49:14 by gfezzuog         ###   ########.fr       */
+/*   Updated: 2021/10/18 20:34:42 by gfezzuog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_strlowcase(char *str)
+char	*ft_strlowcase(char *str)
 {
 	int	i;
 

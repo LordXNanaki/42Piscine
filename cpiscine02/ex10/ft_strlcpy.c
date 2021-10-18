@@ -6,30 +6,28 @@
 /*   By: gfezzuog <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 15:20:13 by gfezzuog          #+#    #+#             */
-/*   Updated: 2021/10/12 16:15:52 by gfezzuog         ###   ########.fr       */
+/*   Updated: 2021/10/18 20:37:37 by gfezzuog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(int c, char *vec)
+int	ft_strlen(int c, char *vec)
 {
-    c = 0;
-    while (vec[c] != '\0')
-    {
-        c++;
-
-    }
-    return (c);
+	c = 0;
+	while (vec[c] != '\0')
+	{
+		c++;
+	}
+	return (c);
 }
 
-unsigned int ft_strlcpy(char *dest, char *src, unsigned  int size)
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	int i;
-	int e;
+	unsigned int	i;
+	unsigned int	e;
 
 	i = 0;
 	e = 0;
 	ft_strlen(i, dest);
-
 	while (e != '\0')
 	{
 		if (i < size - 1)
@@ -41,9 +39,9 @@ unsigned int ft_strlcpy(char *dest, char *src, unsigned  int size)
 		else
 		{
 			dest[i] = '\0';
-			break;
+			break ;
 		}
 	}
 	ft_strlen(e, src);
-	return(e);
+	return (e);
 }

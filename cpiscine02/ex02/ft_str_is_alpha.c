@@ -6,15 +6,15 @@
 /*   By: gfezzuog <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 12:02:55 by gfezzuog          #+#    #+#             */
-/*   Updated: 2021/10/11 12:06:32 by gfezzuog         ###   ########.fr       */
+/*   Updated: 2021/10/18 20:22:40 by gfezzuog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 int	ft_str_is_alpha(char *str)
 {
 	int	i;
 	int	n;
 
+	n = 1;
 	i = 0;
 	while (str[i] != '\0')
 	{

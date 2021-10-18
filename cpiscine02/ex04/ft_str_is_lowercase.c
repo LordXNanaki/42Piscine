@@ -6,7 +6,7 @@
 /*   By: gfezzuog <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 12:10:36 by gfezzuog          #+#    #+#             */
-/*   Updated: 2021/10/11 12:14:19 by gfezzuog         ###   ########.fr       */
+/*   Updated: 2021/10/18 20:26:42 by gfezzuog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@ int	ft_str_is_lowercase(char *str)
 	int	i;
 	int	n;
 
+	n = 1;
 	i = 0;
 	while (str[i] != '\0')
 	{
