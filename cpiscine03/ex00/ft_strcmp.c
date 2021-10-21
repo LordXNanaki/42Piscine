@@ -5,28 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: gfezzuog <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/14 17:29:06 by gfezzuog          #+#    #+#             */
-/*   Updated: 2021/10/14 17:35:05 by gfezzuog         ###   ########.fr       */
+/*   Created: 2021/10/20 15:44:05 by gfezzuog          #+#    #+#             */
+/*   Updated: 2021/10/20 15:44:11 by gfezzuog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
-	int	e;
-	int	diff;
 
 	i = 0;
-	e = 0;
-	diff = 0;
-	while (s1[i] != '\0')
+	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
 	{
 		i++;
 	}
-	while (s2[e] != '\0')
-	{
-		e++;
-	}
-	diff = i - e;
-	return (diff);
+	return (s1[i] - s2[i]);
 }

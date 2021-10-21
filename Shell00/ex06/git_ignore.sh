@@ -1,1 +1,1 @@
-git ls-files -o -i --exclude-standard
+git status --ignored -s | grep "!!"| cut -f 2 -d ' ' 

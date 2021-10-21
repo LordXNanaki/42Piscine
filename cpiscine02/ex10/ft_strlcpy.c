@@ -6,19 +6,9 @@
 /*   By: gfezzuog <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 15:20:13 by gfezzuog          #+#    #+#             */
-/*   Updated: 2021/10/18 20:37:37 by gfezzuog         ###   ########.fr       */
+/*   Updated: 2021/10/19 17:16:10 by gfezzuog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int	ft_strlen(int c, char *vec)
-{
-	c = 0;
-	while (vec[c] != '\0')
-	{
-		c++;
-	}
-	return (c);
-}
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
@@ -27,21 +17,16 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 
 	i = 0;
 	e = 0;
-	ft_strlen(i, dest);
-	while (e != '\0')
+	while (src[e] != '\0')
+		e++;
+	if (size != 0)
 	{
-		if (i < size - 1)
+		while (src[i] != '\0' && i < size - 1)
 		{
-			dest[i] = src[e];
-			e++;
+			dest[i] = src[i];
 			i++;
 		}
-		else
-		{
-			dest[i] = '\0';
-			break ;
-		}
+		dest[i] = '\0';
 	}
-	ft_strlen(e, src);
 	return (e);
 }

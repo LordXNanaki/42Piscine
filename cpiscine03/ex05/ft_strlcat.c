@@ -1,31 +1,39 @@
-unsigned int	ft_strlen(char* str)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gfezzuog <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/20 15:45:39 by gfezzuog          #+#    #+#             */
+/*   Updated: 2021/10/20 15:45:43 by gfezzuog         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <unistd.h>
+
+unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	unsigned int counter;
+	unsigned int	i;
+	unsigned int	j;
+	unsigned int	x;
 
-	counter = 0;
-	while (*str != '\0')
+	i = 0;
+	x = 0;
+	while (dest[i] != '\0')
+		i++;
+	j = 0;
+	while (src[j] != '\0')
+		j++;
+	if (size <= i)
+		x = j + size;
+	else
+		x = j + i;
+	j = 0;
+	while (src[j] != '\0' && i + 1 < size)
 	{
-		counter++;
-		str++;
+		dest[i++] = src[j++];
 	}
-	return (counter);
-}
-
-unsigned int	ft_strlcat(char* dest, char* src, unsigned int size)
-{
-	unsigned int c;
-	unsigned int d;
-
-	if (size <= ft_strlen(dest))
-		return (size + ft_strlen(src));
-	c = ft_strlen(dest);
-	d = 0;
-	while (src[d] != '\0' && c + 1 < size)
-	{
-		dest[c] = src[d];
-		c++;
-		d++;
-	}
-	dest[c] = '\0';
-	return (ft_strlen(dest) + ft_strlen(&src[d]));
+	dest[i] = '\0';
+	return (x);
 }
